@@ -10,7 +10,7 @@
 
     <groupId>ch.racic.selenium.helper</groupId>
     <artifactId>SeleniumDownloadHelper</artifactId>
-    <version>0.3.1-SNAPSHOT</version>
+    <version>0.3.2-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Selenium Download Helper library</name>
@@ -211,7 +211,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>3.0.0-M1</version>
                 <configuration>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
                     <useReleaseProfile>false</useReleaseProfile>

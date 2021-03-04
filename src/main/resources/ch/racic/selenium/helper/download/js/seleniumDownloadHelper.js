@@ -30,10 +30,10 @@ var seleniumDownloadHelper = {
         var disp = xhr.getResponseHeader('Content-Disposition');
         var fileName = "";
         if (disp && disp.search('filename') != -1) {
-            var filenamePattern = "filename=\"(.*)\".*";
-            var re = new RegExp(filenamePattern);
-            if (re.test(disp)) {
-                fileName = re.exec(disp)[1];
+            var filenameRegex = /filename[^;=\n]*=((['"]).*?\2|[^;\n]*)/;
+            if (filenameRegex.test(disp)) {
+                fileName = filenameRegex.exec(disp)[1].replace(/['"]/g, '');
+                fileName = decodeURIComponent(fileName);
             }
         }
 

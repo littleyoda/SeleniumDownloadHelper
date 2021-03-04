@@ -17,6 +17,6 @@ Maven Central
 <dependency>
     <groupId>ch.racic.selenium.helper</groupId>
     <artifactId>SeleniumDownloadHelper</artifactId>
-    <version>0.3.0</version>
+    <version>0.3.2</version>
 </dependency>
 ```
